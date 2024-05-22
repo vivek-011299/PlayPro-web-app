@@ -8,6 +8,7 @@ public class PlayproApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PlayproApplication.class, args);
+		System.out.println("Hello World");
 	}
 
 }

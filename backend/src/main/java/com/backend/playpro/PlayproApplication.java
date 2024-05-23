@@ -9,7 +9,7 @@ public class PlayproApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext context = SpringApplication.run(PlayproApplication.class, args);
-		System.out.println("Hello World");
+
 	}
 
 }

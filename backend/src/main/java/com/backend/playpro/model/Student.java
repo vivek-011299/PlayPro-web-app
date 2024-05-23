@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 
 @Entity
 @AllArgsConstructor
-public class student {
+public class Student {
     private String studentId;
     private String studentName;
     private int studentAge;

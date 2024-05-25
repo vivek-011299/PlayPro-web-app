@@ -1,8 +1,12 @@
 package com.backend.playpro.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.awt.*;
 
 @Controller
 public class Home {
@@ -13,15 +17,16 @@ public class Home {
         return "Hello World";
     }
 
-    @RequestMapping("about")
+    @GetMapping(value = "about", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public String about(){
-        return "In the about section";
+
+        return "{ \"message\":\"In about section\" }";
     }
 
-    @RequestMapping("contact")
+    @RequestMapping(value = "contact", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public String contact(){
-        return "contact us";
+        return "{ \"message\":\"In Contacts\" }";
     }
 }

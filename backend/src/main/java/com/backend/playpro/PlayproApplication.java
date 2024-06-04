@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PlayproApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(PlayproApplication.class, args);
 	}
 

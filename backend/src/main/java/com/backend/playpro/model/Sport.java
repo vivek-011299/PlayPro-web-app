@@ -6,9 +6,10 @@ import javax.persistence.Entity;
 
 @Entity
 @AllArgsConstructor
-public class sport {
+public class Sport {
     private int sportId;
     private String sportName;
+
     public int getSportId() {
         return sportId;
     }

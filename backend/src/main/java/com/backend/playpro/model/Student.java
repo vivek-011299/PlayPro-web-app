@@ -1,13 +1,18 @@
 package com.backend.playpro.model;
 
 import lombok.AllArgsConstructor;
-import javax.persistence.Entity;
+
+import javax.persistence.*;
 
 @Entity
 @AllArgsConstructor
-public class student {
+public class Student {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String studentId;
+    @Column(nullable = false)
     private String studentName;
+    @Column(nullable = false)
     private int studentAge;
 
     public String getStudentId() {

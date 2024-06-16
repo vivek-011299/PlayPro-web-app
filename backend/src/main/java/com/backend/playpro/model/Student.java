@@ -1,11 +1,13 @@
 package com.backend.playpro.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import javax.persistence.*;
 
 @Entity
 @AllArgsConstructor
+@Data
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,27 +17,5 @@ public class Student {
     @Column(nullable = false)
     private int studentAge;
 
-    public String getStudentId() {
-        return studentId;
-    }
 
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-    public int getStudentAge() {
-        return studentAge;
-    }
-
-    public void setStudentAge(int studentAge) {
-        this.studentAge = studentAge;
-    }
 }

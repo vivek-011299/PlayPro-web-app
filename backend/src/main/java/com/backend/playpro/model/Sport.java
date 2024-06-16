@@ -1,26 +1,15 @@
 package com.backend.playpro.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 import javax.persistence.Entity;
 
 @Entity
+@Data
 @AllArgsConstructor
 public class Sport {
     private int sportId;
     private String sportName;
 
-    public int getSportId() {
-        return sportId;
-    }
-
-    public void setSportId(int sportId) {
-        this.sportId = sportId;
-    }
-    public String getSportName() {
-        return sportName;
-    }
-    public void setSportName(String sportName) {
-        this.sportName = sportName;
-    }
 }
